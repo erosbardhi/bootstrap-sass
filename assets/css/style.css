@@ -10746,5 +10746,46 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-rounded {
+  position: relative;
+  padding: 0 2rem 0 0.3rem;
+  font-weight: 500;
+  margin: 0;
+  border: none;
+  background-color: #7056f1;
+  color: #e9ecef;
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #7056f1;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(10%);
+  border-radius: 40%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+.btn-rounded:hover {
+  opacity: 0.65;
+  color: #fff;
+}
+
+.menu {
+  background: linear-gradient(to right, #5333ed, rgba(83, 51, 237, 0.9));
+}
+.menu li {
+  padding: 0 0.9rem;
+}
+.menu li a {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+img {
+  padding: 0 3px;
+}
 
 /*# sourceMappingURL=style.css.map */
