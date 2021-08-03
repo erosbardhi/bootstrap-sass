@@ -3,7 +3,7 @@
 
 .intro-section {
   @include gradient;
-  padding: 10rem 0 0 0;
+  padding: 20rem 0 0 0;
   width: 100%;
   height: 100%;
 }
@@ -13,7 +13,7 @@
     position: relative;
 
     a {
-      @include absoluteCenter;
+     /*  @include absoluteCenter; */
       margin-left: 90px;
 
       span {
