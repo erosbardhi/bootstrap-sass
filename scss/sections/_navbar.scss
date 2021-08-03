@@ -3,6 +3,7 @@
 
 .menu {
     @include gradient;
+    font-family: 'Poppins', sans-serif;
     li {
         padding: 0 0.9rem;
 
@@ -11,6 +12,11 @@
             text-transform: capitalize;
         }
     }
+}
+
+.navbar-brand {
+    font-weight: 300;
+
 }
 
 img {
