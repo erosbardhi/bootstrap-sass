@@ -4370,7 +4370,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.5rem;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -4453,7 +4453,7 @@ textarea.form-control-lg {
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .accordion-flush .accordion-collapse {
@@ -10833,6 +10833,36 @@ textarea.form-control-lg {
   right: 10px;
 }
 
+.btn-secondary {
+  border-radius: 4px;
+  background-color: #5333ed;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.9s;
+}
+.btn-secondary:hover {
+  transition: 0.4s;
+  padding-right: 34px;
+  padding-left: 30px;
+}
+.btn-secondary:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -11017,6 +11047,147 @@ img {
 }
 .services__pic {
   max-width: 100%;
+}
+
+.services-bg {
+  background-color: #f8f9fa;
+}
+
+.testimonials {
+  position: relative;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+.testimonials__card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.testimonials__card i {
+  font-size: 1.5rem;
+  color: rgba(112, 86, 241, 0.9);
+}
+.testimonials__card .ratings i {
+  color: rgba(83, 51, 237, 0.7);
+  font-size: 1rem;
+}
+.testimonials__picture {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonials__picture img {
+  border: 0.325rem solid rgba(83, 51, 237, 0.7);
+}
+.testimonials__name {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #212529;
+  font-family: "Poppins", sans-serif;
+}
+.testimonials__name h3 {
+  padding-top: 0.8rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.testimonials__name p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin: 10vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  border: none;
+  margin-bottom: 20px;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+    margin-bottom: 10px;
+  }
+}
+.card.card-has-bg {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card.card-has-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.card.card-has-bg .text-white {
+  text-decoration: none;
+}
+.card.card-has-bg:hover {
+  transform: scale(1);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, #044572 100%);
+}
+.card .card-footer {
+  background: none;
+  border-top: none;
+}
+.card .card-footer .media img {
+  border: solid 1px #2cd4d9;
+}
+.card .card-meta {
+  color: #2cd4d9;
+}
+.card .card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover {
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
